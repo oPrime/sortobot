@@ -1,6 +1,6 @@
 # Sortobot
 
-TODO: Write a gem description
+A Command-Line tool for managing files in a directory. Use it to manage your messy home directory or Downloads folder.
 
 ## Installation
 
@@ -17,8 +17,9 @@ Or install it yourself as:
     $ gem install sortobot
 
 ## Usage
+To push group files of the directory into subdirectory based on file-type.
 
-TODO: Write usage instructions here
+		sortobot push
 
 ## Contributing
 
