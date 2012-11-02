@@ -1,11 +1,12 @@
 require "mime/types"
 require "thor"
+require "thor/group"
 require "fileutils"
 
 module Sortobot
 	class Cli < Thor
 		Directories = {"text" => "Documents", "image" =>"Images", "audio"=>"Music"}
-		
+		#<Helpers>
 		def self.associate(file)
 			type = MIME::Types.type_for(file).first
 
@@ -23,6 +24,7 @@ module Sortobot
 				end				
 			end
 		end
+		#</Helpers>
 
 		desc "push", "push files into directories"
 		def push
@@ -33,9 +35,5 @@ module Sortobot
 				end	
 			end			
 		end
-  end
-
-  class Root < Thor  	
-  	register Sortobot::Cli, 'push', 'push', 'Delegates to a sub-command'
-  end
+  end  
 end

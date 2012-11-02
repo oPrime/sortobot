@@ -1,2 +1,2 @@
 require 'sortobot'
-CLI::Root.start
+Sortobot::Cli.start
