@@ -1,2 +1,4 @@
+#!/usr/bin/env ruby
+
 require 'sortobot'
 Sortobot::Cli.start
