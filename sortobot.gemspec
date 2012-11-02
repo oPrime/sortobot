@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "sortobot"
   gem.require_paths = ["lib"]
   gem.version       = Sortobot::VERSION
+
+  gem.add_dependency 'thor'
 end
