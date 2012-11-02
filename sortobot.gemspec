@@ -2,7 +2,7 @@
 require File.expand_path('../lib/sortobot/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Mohan Arangan"]
+  gem.authors       = ["Mohan"]
   gem.email         = ["mohanr2222@gmail.com"]
   gem.description   = %q{A CLI tool for organizing files in a directory}
   gem.summary       = %q{A CLI tool for really messed up directories like your home folder or Downloads}
