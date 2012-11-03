@@ -35,5 +35,16 @@ module Sortobot
 				end	
 			end			
 		end
+
+		desc "trim", "removes empty directories"
+		def trim
+			Dir.foreach(Dir.pwd) do |entry|
+				if File.directory? entry
+					if Dir.entries(entry).join == "..."
+						FileUtils.rmdir entry
+					end
+				end
+			end
+		end
   end  
 end
