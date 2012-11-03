@@ -19,7 +19,11 @@ Or install it yourself as:
 ## Usage
 To push group files of the directory into subdirectory based on file-type.
 
-		sortobot push
+	sortobot push
+	
+To Remove empty directories.
+
+	sortobot trim
 
 ## Contributing
 
