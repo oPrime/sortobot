@@ -7,24 +7,17 @@ require "sortobot/helper"
 module Sortobot
 	class Cli < Thor
 		desc "push", "push files into directories"
+		desc "trim", "removes empty directories"
+
 		def push
 			Helper.makedir
-			Dir.foreach(Dir.pwd) do |file|
-				if Helper.associate(file)
-					FileUtils.mv(file, Helper.associate(file))		
-				end	
-			end			
+			Helper.move
+			Helper.trim			
 		end
 
-		desc "trim", "removes empty directories"
+		
 		def trim
-			Dir.foreach(Dir.pwd) do |entry|
-				if File.directory? entry
-					if Dir.entries(entry).join == "..."
-						FileUtils.rmdir entry
-					end
-				end
-			end
+			Helper.trim
 		end
   end
 end
