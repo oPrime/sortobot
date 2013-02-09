@@ -2,7 +2,7 @@ require "mime/types"
 require "thor"
 require "thor/group"
 require "fileutils"
-require "sortobot/helper"
+#require "sortobot/helper"
 
 module Sortobot
 	class Cli < Thor
